@@ -521,15 +521,23 @@ section.social .content {
   padding-top: 2em;
   justify-content: center;
 }
-section.social .content i {
+section.social .content .icon i {
   color: #fbfbfb;
   font-size: max(1.5vw, 50px);
+  padding: 0.2em;
+  border-radius: 50%;
 }
 section.social .content .text {
   color: #fbfbfb;
   font-size: max(1.5vw, 16px);
   padding-left: 1em;
   width: 80%;
+}
+section.social .content:nth-child(2) i {
+  background-color: #ff3db0;
+}
+section.social .content:nth-child(3) i {
+  background-color: #a237ff;
 }
 section.social div.bg-misc-1 img {
   position: absolute;

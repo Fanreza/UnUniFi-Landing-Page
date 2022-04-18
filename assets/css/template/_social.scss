@@ -20,9 +20,13 @@ section.social {
         padding-top: 2em;
         justify-content: center;
 
-        i {
-            color: v.$text-color;
-            font-size: max(1.5vw, 50px);
+        .icon{
+            i {
+                color: v.$text-color;
+                font-size: max(1.5vw, 50px);
+                padding: .2em;
+                border-radius: 50%;
+            }
         }
 
         .text {
@@ -30,6 +34,18 @@ section.social {
             font-size: max(1.5vw, 16px);
             padding-left: 1em;
             width: 80%;
+        }
+    }
+
+    .content:nth-child(2){
+        i{
+            background-color: v.$primary-color;
+        }
+    }
+
+    .content:nth-child(3){
+        i{
+            background-color: v.$secondary-color;
         }
     }
 
