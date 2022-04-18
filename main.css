@@ -49,6 +49,7 @@ body {
   display: block;
   font-weight: 500;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .navbar .navbar-button a {
   border: 3px solid;
