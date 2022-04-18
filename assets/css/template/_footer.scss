@@ -7,18 +7,20 @@ footer{
     justify-content: space-between;
     align-items: center;
     background-color: #121212;
-    padding: 3em;
+    padding: 3em 1em;
 
     .brand{
         color: v.$text-color;
         font-size: max(1.5vw, 20px);
         font-weight: v.$text-bold;
-        padding: 0 2em;
     }
 
     .copyright{
         color: v.$text-color;
         font-size: max(1.5vw, 16px);
-        padding: 0 2em;
+
+        span{
+            color: v.$primary-color;
+        }
     }
 }
