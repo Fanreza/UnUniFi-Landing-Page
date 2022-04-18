@@ -2,12 +2,18 @@
 
 
 // Global Property ( ALL Size )
+.navbar.scrolled{
+    background-color: #1C1B1B;
+    padding: max(.5vw, .5em) max(1vw,1em);
+}
+
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
+    transition: all 0.5s ease;
 
     .mobile {
         display: none;
@@ -16,7 +22,6 @@
     .menu-button{
         display: none;
     }
-
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -40,9 +45,14 @@
                 color: v.$text-color;
                 margin: 1em;
                 display: block;
-                font-weight: v.$text-medium;
+                font-weight: 400;
                 text-decoration: none;
                 text-transform: uppercase;
+                transition: .5s;
+
+                &:hover{
+                    color: v.$secondary-color;
+                }
             }
         }
     }
@@ -58,6 +68,11 @@
             margin: 1em;
             display: block;
             text-decoration: none;
+            transition: .5s;
+
+            &:hover{
+                color: v.$secondary-color;
+            }
         }
     }
 }

@@ -14,12 +14,18 @@ body {
   background-repeat: no-repeat;
 }
 
+.navbar.scrolled {
+  background-color: #1C1B1B;
+  padding: max(0.5vw, 0.5em) max(1vw, 1em);
+}
+
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1;
+  transition: all 0.5s ease;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -48,9 +54,13 @@ body {
   color: #fbfbfb;
   margin: 1em;
   display: block;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
+  transition: 0.5s;
+}
+.navbar .navbar-menu-list li a:hover {
+  color: #a237ff;
 }
 .navbar .navbar-button a {
   border: 3px solid;
@@ -62,6 +72,10 @@ body {
   margin: 1em;
   display: block;
   text-decoration: none;
+  transition: 0.5s;
+}
+.navbar .navbar-button a:hover {
+  color: #a237ff;
 }
 
 @media screen and (max-width: 767px) {
@@ -166,6 +180,11 @@ section.hero .jumbotron-button a {
   border: 1px solid;
   border-image-source: linear-gradient(266.02deg, #A237FF 13.55%, #BF78FE 90.18%);
   border-image-slice: 1;
+  transition: 0.3s;
+}
+section.hero .jumbotron-button a:hover {
+  background: transparent;
+  color: #a237ff;
 }
 
 @media screen and (max-width: 576px) {

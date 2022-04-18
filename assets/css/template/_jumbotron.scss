@@ -45,6 +45,12 @@ section.hero {
             border: 1px solid;
             border-image-source: linear-gradient(266.02deg, #A237FF 13.55%, #BF78FE 90.18%);
             border-image-slice: 1;
+            transition: .3s;
+
+            &:hover{
+                background: transparent;
+                color: v.$secondary-color;
+            }
         }
     }
 }
