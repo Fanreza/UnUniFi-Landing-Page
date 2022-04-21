@@ -17,10 +17,22 @@ footer{
 
     .copyright{
         color: v.$text-color;
-        font-size: max(1.5vw, 16px);
+        font-size: max(1vw, 14px);
 
         span{
             color: v.$primary-color;
+        }
+    }
+}
+
+
+// Small Mobile Size
+@media screen and (max-width: v.$small-mobile-size){
+    footer{
+        padding: 2em 1em;
+    
+        .copyright{
+            font-size: max(1vw, 12px);
         }
     }
 }
